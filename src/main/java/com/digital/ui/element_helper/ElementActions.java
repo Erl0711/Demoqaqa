@@ -2,6 +2,7 @@ package com.digital.ui.element_helper;
 
 
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.WebDriverRunner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,6 +22,12 @@ public class ElementActions {
         element.setValue(txt);
         logger.info("Succesfully written");
         return this;
+    }
+
+    public ElementActions openUrl(String url){
+        logger.warn("I'm trying to open previous url ");
+        WebDriverRunner.getWebDriver().navigate().to(url);
+        logger.info("Succesfully url opened");
     }
 
 
