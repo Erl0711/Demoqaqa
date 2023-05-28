@@ -27,8 +27,13 @@ public class TextBoxPage extends BasePage {
         return this;
     }
 
-    public TextBoxPage pressSubmitBtn(SelenideElement element){
-        elementActions.press(element);
+    public TextBoxPage pressSubmitBtn(){
+        elementActions.press(submitBtn);
+        return this;
+    }
+
+    public TextBoxPage openPage(){
+        elementActions.openUrl("https://demoqa.com/text-box");
         return this;
     }
 

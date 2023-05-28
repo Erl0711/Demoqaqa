@@ -25,9 +25,10 @@ public class ElementActions {
     }
 
     public ElementActions openUrl(String url){
-        logger.warn("I'm trying to open previous url ");
+        logger.warn("I'm trying to open url ");
         WebDriverRunner.getWebDriver().navigate().to(url);
         logger.info("Succesfully url opened");
+        return this;
     }
 
 

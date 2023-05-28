@@ -1,0 +1,6 @@
+com\digital\ui\elementPage\TextBoxPage.class
+com\digital\ui\element_helper\ElementActions.class
+com\digital\Listener\ScreenshotListener.class
+com\digital\ui\BasePage.class
+com\digital\ui\elementPage\ButtonPage.class
+com\digital\MockGenerator\FakerGenerator.class

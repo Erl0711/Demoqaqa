@@ -17,8 +17,13 @@ public class TextBoxtTest extends BaseUiTest {
     @Description("input name and check")
     public void checkName(){
         String name = faker.randomFirstName();
-        textBoxPage.inputField(textBoxPage.fullName, name);
-        textBoxPage.resName.shouldHave(Condition.value(name));
+        textBoxPage.openPage()
+                   .inputField(textBoxPage.fullName, name)
+                   .pressSubmitBtn();
+        textBoxPage.resName.shouldHave(Condition.text(name));
     }
+
+
+
 
 }
